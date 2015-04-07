@@ -7,6 +7,9 @@ read message
 git commit -m "$message"
 git checkout master
 git merge tmp
-git push origin master
+git push origin master <<EOF
+ user wolffzheng Wolff8341
+EOF
+
 git branch -d tmp
 
