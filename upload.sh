@@ -8,7 +8,8 @@ temp_date=$(date)
 git commit -m "add books on $temp_date"
 git checkout master
 git merge tmp
-spawn git push origin master
+git push origin master
+#spawn git push origin master
 expect "*https://github.com*"
 send "wolffzheng\r"
 expect "*wolffzheng@github.com*"
