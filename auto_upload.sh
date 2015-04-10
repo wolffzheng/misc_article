@@ -13,10 +13,11 @@ spawn git merge tmp
 spawn git push origin master
 #spawn git push origin master
 expect "*https://github.com*"
-send "wolffzheng\r"
+send "$username\r"
+#send "wolffzheng\r"
 expect "*wolffzheng@github.com*"
-send "Wolff8341\r"
+send "$password\r"
+#send "Wolff8341\r"
 interact
 spawn git branch -d tmp
-
 
